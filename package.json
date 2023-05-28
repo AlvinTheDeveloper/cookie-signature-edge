@@ -1,0 +1,22 @@
+{
+  "name": "cookie-signature-edge",
+  "version": "1.0.0",
+  "description": "A library that sign and unsign cookies. Similar to cookie-signature but supports Edge runtime.",
+  "keywords": ["edge","cookie", "sign", "unsign","signature"],
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlvinTheDeveloper/cookie-signature-edge.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@edge-runtime/jest-environment": "^2.1.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  }
+}
