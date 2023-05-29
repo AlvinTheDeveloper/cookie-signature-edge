@@ -28,7 +28,8 @@ async function sign(val:string, secret:string):Promise<string> {
         const base64Signature = btoa(signatureString);
 
         return val + '.' + base64Signature.replace(/\=+$/, '');
-    }catch(error) {
+    }catch(e) {
+        const error=e as Error
         throw new Error('Error signing the cookie: ' + error.message);
     }
 }
@@ -63,12 +64,12 @@ async function unsign(input:string, secret:string): Promise<string|boolean>{
         const secretKey = encoder.encode(secret);
 
         const cryptoKey=await  subtleCrypto.importKey('raw', secretKey, algorithm, false, ['verify'])
-        const isValid=subtleCrypto.verify(algorithm, cryptoKey, signatureBytes, data);
+        const isValid:boolean=await subtleCrypto.verify(algorithm, cryptoKey, signatureBytes, data);
 
         return isValid ? val : false;
-    }catch(error){
-        console.error(error);
-        throw new Error('Error verifying the cookie signature: ' + error.message);
+    }catch(e){
+        const error=e as Error
+        throw new Error('Error verifying the cookie signature: ' + error);
     }
 }
 
