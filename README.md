@@ -1,5 +1,5 @@
 # cookie-signature-edge
-#### An Edge Runtime library that sign and unsign cookies.
+#### An Edge Runtime package that sign and unsign cookies. This package is currently for Edge Runtime only.
 
 ## Example
 ```js
