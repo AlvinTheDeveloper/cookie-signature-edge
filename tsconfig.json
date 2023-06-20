@@ -28,7 +28,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "outDir": "dist"
   },
   "include": [
     "**/*.ts",

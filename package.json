@@ -1,10 +1,10 @@
 {
   "name": "cookie-signature-edge",
-  "version": "1.0.4",
-  "description": "An Edge Runtime package that sign and unsign cookies. This package is currently for Edge Runtime only.",
+  "version": "1.0.5",
+  "description": "A package that sign and unsign cookies for Edge API Routes.",
   "keywords": ["edge","edge-runtime","nextjs","cookie", "sign", "unsign","signature"],
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
