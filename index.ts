@@ -44,7 +44,7 @@ async function sign(val:string, secret:string):Promise<string> {
  * @api private
  */
 
-async function unsign(input:string, secret:string): Promise<string|boolean>{
+async function unsign(input:string, secret:string): Promise<string|false>{
     if (typeof input !== 'string') throw new TypeError("Signed cookie string must be provided.");
     if (secret == null) throw new TypeError("Secret key must be provided.");
 
