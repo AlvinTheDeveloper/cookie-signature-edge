@@ -1,6 +1,6 @@
 {
   "name": "cookie-signature-edge",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A package that sign and unsign cookies for Edge API Routes.",
   "keywords": ["edge","edge-runtime","nextjs","cookie", "sign", "unsign","signature"],
   "main": "dist/index.js",

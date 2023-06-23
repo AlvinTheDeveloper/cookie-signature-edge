@@ -16,5 +16,5 @@ declare function sign(val: string, secret: string): Promise<string>;
  * @return {String|Boolean}
  * @api private
  */
-declare function unsign(input: string, secret: string): Promise<string | boolean>;
+declare function unsign(input: string, secret: string): Promise<string | false>;
 export { sign, unsign };
