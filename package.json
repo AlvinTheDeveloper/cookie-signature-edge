@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/AlvinTheDeveloper/cookie-signature-edge.git"
   },
+  "scripts:"{
+    "test":"jest"
+  },
   "dependencies": {},
   "devDependencies": {
     "@edge-runtime/jest-environment": "^2.1.0",
