@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/AlvinTheDeveloper/cookie-signature-edge.git"
   },
-  "scripts:"{
+  "scripts":{
     "test":"jest"
   },
   "dependencies": {},
